@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>GenAI Chatbot</h1>
+        <div id="chatbox"></div>
+        <form id="chat-form">
+            <input type="text" id="user-input" placeholder="Type your message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById("chat-form");
+        const chatbox = document.getElementById("chatbox");
+
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const userInput = document.getElementById("user-input").value;
+            chatbox.innerHTML += `<div class="user-message">${userInput}</div>`;
+            document.getElementById("user-input").value = "";
+
+            const response = await fetch("/get_response", {
+                method: "POST",
+                body: new URLSearchParams({ "user_input": userInput }),
+            });
+            const responseText = await response.text();
+            chatbox.innerHTML += `<div class="bot-message">${responseText}</div>`;
+        });
+    </script>
+</body>
+</html>
