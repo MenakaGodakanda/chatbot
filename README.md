@@ -52,6 +52,7 @@ Start the Flask web application:
 ```
 python app.py
 ```
+![Screenshot 2025-01-13 044202](https://github.com/user-attachments/assets/004d9237-a75f-4312-bbdd-b3ae6a856970)
 
 ### 5. Access the Chatbot
 
