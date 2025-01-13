@@ -27,6 +27,13 @@ cd chatbot
 ```
 
 ### 2. Create a Virtual Environment (Optional)
+- Install virtualenv for isolated Python environments:
+```
+sudo apt install python3-virtualenv
+```
+![Screenshot 2025-01-13 044202](https://github.com/user-attachments/assets/d950a20e-640c-40b8-b076-5f0c3d740199)
+
+- Create a virtual environment:
 ```
 virtualenv chatbot_env
 source chatbot_env/bin/activate
@@ -55,11 +62,26 @@ http://127.0.0.1:5000
 
 ### Example Interaction
 
-User Input:
+- User Input:
 ```
 Hello, chatbot!
 ```
-Bot Response:
+- Bot Response:
+![Screenshot 2025-01-13 044659](https://github.com/user-attachments/assets/24471ba6-e03d-45e0-848b-7954d2427cd2)
+
+- User Input:
+```
+What is AI?
+```
+- Bot Response:
+![Screenshot 2025-01-13 044733](https://github.com/user-attachments/assets/99a596e3-2037-4db3-9ac9-289940a0d948)
+
+- User Input:
+```
+Tell me a joke.
+```
+- Bot Response:
+![Screenshot 2025-01-13 044810](https://github.com/user-attachments/assets/ee52d9b7-6760-4d1a-8011-7fe34e2aa416)
 
 
 ### Chat Flow:
