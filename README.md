@@ -1,7 +1,22 @@
 # GenAI Chatbot Project
+This project demonstrates a Generative AI (GenAI)-based chatbot built using open-source tools. The chatbot uses a pre-trained model from the Hugging Face Transformers library to generate responses to user inputs. A Flask web application provides the interface for user interaction, and the project is designed to run on Ubuntu 22.04.
 
 ## Overview
-This project demonstrates a Generative AI (GenAI)-based chatbot built using open-source tools. The chatbot uses a pre-trained model from the Hugging Face Transformers library to generate responses to user inputs. A Flask web application provides the interface for user interaction, and the project is designed to run on Ubuntu 22.04.
+<img width="1336" alt="Screenshot 2025-01-29 at 3 01 21 pm" src="https://github.com/user-attachments/assets/5e87257a-afca-41f4-9db3-7ca8790feee3" />
+
+### Explanation:
+#### 1. User Input (Frontend UI - `index.html`)
+- User enters a message in the chatbox.
+#### 2. Flask Web App (`app.py`)
+- Handles user request and routes it to chatbot logic.
+#### 3. Chatbot Logic (`chatbot_logic.py`)
+- Loads AI model and processes user input.
+#### 4. AI Model (GPT-2 from `transformers`)
+- Generates a response using a pre-trained transformer model.
+#### 5. Response Sent Back to Flask
+- Flask sends the chatbot’s response back to the user interface.
+#### 6. User Receives Response
+- The response is displayed dynamically in the chatbox.
 
 ## Features
 
